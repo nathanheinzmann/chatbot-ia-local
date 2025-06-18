@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chatbot de Contexto
 
-## Getting Started
+Um chatbot inteligente que permite fazer perguntas sobre um texto de contexto definido pelo usuário. O sistema utiliza processamento de linguagem natural e embeddings para fornecer respostas precisas baseadas no contexto fornecido.
 
-First, run the development server:
+## 🚀 Funcionalidades
 
+- Definição de contexto textual pelo usuário
+- Interface de chat intuitiva
+- Respostas baseadas no contexto definido
+- Processamento de linguagem natural em português
+
+## 🛠️ Tecnologias Utilizadas
+
+- Next.js 15
+- React
+- TypeScript
+- Tailwind CSS
+- Transformers.js (Xenova)
+
+## 📋 Pré-requisitos
+
+- Node.js 18 ou superior
+- npm ou yarn
+
+## 🔧 Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [URL_DO_REPOSITORIO]
+cd [NOME_DO_DIRETORIO]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Acesse a aplicação em `http://localhost:3000`
 
-## Learn More
+## 💻 Como Usar
 
-To learn more about Next.js, take a look at the following resources:
+1. Cole ou digite o texto de contexto na interface e clique em "Definir Contexto"
+2. Faça perguntas sobre o conteúdo do contexto no campo de chat
+3. O sistema irá responder com base no contexto fornecido
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤖 Modelos de IA Utilizados
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Embeddings: Xenova/all-MiniLM-L6-v2
+- Geração de Texto: Xenova/mt5-small
 
-## Deploy on Vercel
+## 📝 Notas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- O sistema processa o contexto em memória para melhor performance
+- As respostas são geradas com base no contexto mais relevante
+- O sistema utiliza similaridade de cosseno para encontrar os trechos mais relevantes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔒 Privacidade
+
+- Todo o processamento é feito localmente no navegador
+- Os textos não são enviados para servidores externos
+- Os modelos de IA são carregados e executados localmente
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
