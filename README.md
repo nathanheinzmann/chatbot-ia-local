@@ -2,6 +2,8 @@
 
 Um chatbot inteligente que permite fazer perguntas sobre um texto de contexto definido pelo usuário. O sistema utiliza processamento de linguagem natural e embeddings para fornecer respostas precisas baseadas no contexto fornecido.
 
+Repositório: [github.com/nathanheinzmann/chatbot-ia-local](https://github.com/nathanheinzmann/chatbot-ia-local)
+
 ## 🚀 Funcionalidades
 
 - Definição de contexto textual pelo usuário
@@ -26,8 +28,8 @@ Um chatbot inteligente que permite fazer perguntas sobre um texto de contexto de
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_REPOSITORIO]
-cd [NOME_DO_DIRETORIO]
+git clone https://github.com/nathanheinzmann/chatbot-ia-local.git
+cd chatbot-ia-local
 ```
 
 2. Instale as dependências:
